@@ -6,6 +6,8 @@ Ultra simple slowdown middleware for django (Add a time.sleep(settings.SLOWDOWN 
 Install
 =======
 
+.. code-block::
+
   pip install django-slowdown
 
 Usage
@@ -14,5 +16,7 @@ Usage
 Add your settings file the Slowdown middleware and the SLOWDOWN setting
 variable (the default value is 1000 miliseconds).
 
-  MIDDLEWARE_CLASSES += ["taiga.middleware.SlowDownMiddleware"]
+.. code-block::
+
+  MIDDLEWARE_CLASSES += ["slowdown.middleware.SlowDownMiddleware"]
   SLOWDOWN = 3000
